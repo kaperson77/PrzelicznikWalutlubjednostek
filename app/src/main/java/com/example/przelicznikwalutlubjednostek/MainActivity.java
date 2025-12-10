@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
             double zl = Double.parseDouble(zlText);
             double cm = Double.parseDouble(cmText);
 
-            double euro = zl * 4.24;
-            double m = cm / 100.0;
+            MainActivity.euro = zl * 4.24;
+            MainActivity.metry = cm / 100.0;
 
             startActivity(new Intent(MainActivity.this, SecondActivity.class));
         });
