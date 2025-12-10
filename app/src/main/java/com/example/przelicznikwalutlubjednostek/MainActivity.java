@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             double zl = Double.parseDouble(zlText);
             double cm = Double.parseDouble(cmText);
 
-            MainActivity.euro = zl * 4.24;
+            MainActivity.euro = Math.round(zl * 4.24 * 100) / 100 ;
             MainActivity.metry = cm / 100.0;
 
             startActivity(new Intent(MainActivity.this, SecondActivity.class));
